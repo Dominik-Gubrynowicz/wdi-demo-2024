@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "storage" {
-  bucket = "${var.name}-bucket-demo"
+  bucket_prefix = "${var.name}-bucket-demo"
 }
 
 resource "aws_s3_bucket_policy" "storage_policy" {
@@ -27,7 +27,7 @@ data "aws_iam_policy_document" "storage_policy" {
       type        = "AWS"
       identifiers = ["*"]
     }
-    resources = ["arn:aws:s3:::${var.name}-bucket-demo/*"]
+    resources = ["${aws_s3_bucket.storage.arn}/*"]
   }
 }
 
