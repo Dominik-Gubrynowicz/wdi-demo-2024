@@ -3,6 +3,6 @@ variable "name" {
   description = "project-name"
 }
 variable "site_code" {
-  type = string
+  type        = string
   description = "website source"
 }

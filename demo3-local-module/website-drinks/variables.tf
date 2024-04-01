@@ -7,6 +7,6 @@ variable "region" {
   description = "aws region name"
 }
 variable "site_code" {
-  type = string
+  type        = string
   description = "website source"
 }
