@@ -1,5 +1,5 @@
 module "website-travel" {
-  source  = "citizen-registry.gubrynowicz.com/wdi2024-live/s3-website/aws"
+  source  = "citizen-registry.gubrynowicz.com/wdi/s3-website/aws"
   version = "~> 1.0.0" # Patches only
 
   name      = var.name

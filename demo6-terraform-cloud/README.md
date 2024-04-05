@@ -1,4 +1,4 @@
-# Demo 6 Git Modules
+# Demo 6 Terraform registry modules
 Natywny terraform cloud pozwala na tworzenie prywatnych, pełnoprawnych private registries, które wspierają version constraint
 
 ## Krok 1

@@ -1,5 +1,5 @@
 module "website-travel" {
-  source  = "terrareg.gubrynowicz.com/demo2__wdi2024/s3-website/aws"
+  source  = "terrareg.gubrynowicz.com/travel__wdi2024/s3-website/aws"
   version = "~> 1.0.0" # Patches only
 
   name      = var.name

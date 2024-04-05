@@ -4,7 +4,7 @@ W sieci znajdziemy także dużo projektów open source, które zapewnią nam wi�
 ## Krok 1
 Wyślijmy do prywatnego registry (citizen) wersję modułu bez cors
 ```bash
-docker run -e CITIZEN_ADDR=https://citizen-registry.gubrynowicz.com -e CITIZEN_DATABASE_TYPE=sqlite -v .:/citizen ghcr.io/outsideris/citizen:latest citizen module wdi2024-live s3-website aws 1.0.0
+docker run -e CITIZEN_ADDR=https://citizen-registry.gubrynowicz.com -e CITIZEN_DATABASE_TYPE=sqlite -v .:/citizen ghcr.io/outsideris/citizen:latest citizen module wdi s3-website aws 1.0.0
 ```
 
 ## Krok 2
@@ -22,7 +22,7 @@ terraform apply
 ## Krok 4
 Zaktualizujmy moduł o wersję cors, wydajmy minor release (1.1.0)
 ```bash
-docker run -e CITIZEN_ADDR=https://citizen-registry.gubrynowicz.com -e CITIZEN_DATABASE_TYPE=sqlite -v .:/citizen ghcr.io/outsideris/citizen:latest citizen module wdi2024-live s3-website aws 1.1.0
+docker run -e CITIZEN_ADDR=https://citizen-registry.gubrynowicz.com -e CITIZEN_DATABASE_TYPE=sqlite -v .:/citizen ghcr.io/outsideris/citizen:latest citizen module wdi s3-website aws 1.1.0
 ```
 
 ## Krok 5
