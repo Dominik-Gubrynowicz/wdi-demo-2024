@@ -16,6 +16,7 @@ terraform apply
 ## Krok 3
 Wypchnijmy zmiany do repo [terraform-aws-wdi2024](../../terraform-aws-wdi2024/cors.tf) by moduł wspierał implementację CORS
 ```
+git commit -m "Feat: enable cors"
 git push origin main
 ```
 
