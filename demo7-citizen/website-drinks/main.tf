@@ -1,5 +1,5 @@
 module "website-drinks" {
-  source  = "citizen-registry.gubrynowicz.com/wdi2024/s3-website/aws"
+  source  = "citizen-registry.gubrynowicz.com/wdi2024-live/s3-website/aws"
   version = "~> 1.0"
 
   name      = var.name
